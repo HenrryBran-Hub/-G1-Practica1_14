@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8B7E466C-B917-07F6-56EF-13E307FE556E" name="Año_Trimestral">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:55:27 UTC</createdTime>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Anio_Trimestral" id="79A88677-B024-E3B7-0C4C-7A12D47FCEE8">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:55:45 UTC</createdTime>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Anio" id="8F3CE827-714F-7D52-F25D-4134FCFD1280">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:56:23 UTC</createdTime>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Trimestre" id="CE86B071-68E4-F533-2050-D8258D78E82E">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:56:59 UTC</createdTime>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8C489128-1E03-7FC4-E0D4-584ADEA4A882" name="Año_Trimestral PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:56:08 UTC</createdTime>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>79A88677-B024-E3B7-0C4C-7A12D47FCEE8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

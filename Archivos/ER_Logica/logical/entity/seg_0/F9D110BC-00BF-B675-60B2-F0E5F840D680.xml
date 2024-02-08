@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F9D110BC-00BF-B675-60B2-F0E5F840D680" name="Lenguaje">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:54:16 UTC</createdTime>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Lenguaje" id="BB297C96-A88E-1637-3A87-CB5A2D30C824">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:54:26 UTC</createdTime>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="929C4F3D-DBBF-CF8E-3377-CE592442A2AF">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:54:58 UTC</createdTime>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8071900C-9AA8-647D-3E1B-1B10CC946831" name="Lenguaje PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:54:43 UTC</createdTime>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BB297C96-A88E-1637-3A87-CB5A2D30C824</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
