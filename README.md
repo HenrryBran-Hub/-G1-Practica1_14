@@ -81,7 +81,7 @@ ___
 
 ___
 
-## Mostramos primera consulta
+## Mostramos segunda consulta
 
 ![2da consulta](https://github.com/HenrryBran-Hub/-G1-Practica1_14/blob/feature-script/Img/5.gif)
 
@@ -89,7 +89,7 @@ ___
 
 ___
 
-## Mostramos primera consulta
+## Mostramos tercera consulta
 
 ![3ra consulta](https://github.com/HenrryBran-Hub/-G1-Practica1_14/blob/feature-script/Img/6.gif)
 
