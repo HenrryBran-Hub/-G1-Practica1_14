@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E019052-7DA7-97C7-4C7B-1EE0C32754A7" name="Año_Trimestral">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>8B7E466C-B917-07F6-56EF-13E307FE556E</generatorID>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Anio_Trimestral" id="1C8C4C1F-423B-43D1-298D-0B6C3AAF9CE9">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>79A88677-B024-E3B7-0C4C-7A12D47FCEE8</generatorID>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Anio" id="7AC46E11-E6F9-BCDE-1116-09227F91BDD8">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>8F3CE827-714F-7D52-F25D-4134FCFD1280</generatorID>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Trimestre" id="C63165BA-C2B7-EE7B-7994-B923657931D3">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>CE86B071-68E4-F533-2050-D8258D78E82E</generatorID>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="594E3DC2-9AFB-46A4-4B49-6FC7D9C8C493" name="Año_Trimestral_PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>8C489128-1E03-7FC4-E0D4-584ADEA4A882</generatorID>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C8C4C1F-423B-43D1-298D-0B6C3AAF9CE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

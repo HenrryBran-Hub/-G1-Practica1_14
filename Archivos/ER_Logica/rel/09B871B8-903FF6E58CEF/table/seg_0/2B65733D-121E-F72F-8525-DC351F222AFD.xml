@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B65733D-121E-F72F-8525-DC351F222AFD" name="Posicion">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>5CB78884-C5F3-DCDB-0323-D5F4CBDC9127</generatorID>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Conteo" id="601AC2C4-94F6-8DEE-3109-E12CA0310B5F">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>23F23AC7-BE0F-35A3-7CB4-B4F45CFF9051</generatorID>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Lenguaje_Id_Lenguaje" id="D8C73B57-EDB1-BBA3-B258-E7A5D45384A3">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>01F0EE6A-1CAA-B825-6CD6-4FD2BF887D94</generatorID>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59007902-CEA5-2478-F356-9524654D9B33" referredColumn="BC1A7279-1E34-B00F-1451-826FD0666BFD"/>
+</associations>
+</Column>
+<Column name="Año_Trimestral_Id_Anio_Trimestral" id="A32EF3BA-6A7E-4A47-A0C5-60823D92CEEA">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>12378FFB-3F3A-7130-8102-FDEE98D7A596</generatorID>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE5AC75E-66AE-BAB1-747F-FBF17A44185D" referredColumn="1C8C4C1F-423B-43D1-298D-0B6C3AAF9CE9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C495771-692B-406B-E228-3B738464ACFA" name="Posicion_PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:28 UTC</createdTime>
+<generatorID>E0B11D76-5063-96EC-3F87-B8E365547437</generatorID>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8C73B57-EDB1-BBA3-B258-E7A5D45384A3"/>
+<colUsage columnID="A32EF3BA-6A7E-4A47-A0C5-60823D92CEEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0661881C-2BF0-30B5-C19F-403F692E6447" name="Posicion_Lenguaje_FK">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>22DBF488-26B5-70E9-7E29-4B073698EA5E</generatorID>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8C73B57-EDB1-BBA3-B258-E7A5D45384A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AAF98E7-A4F5-F81D-6FA4-60E05EACF16A" name="Posicion_Año_Trimestral_FK">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>99C85E55-3FC0-54BE-3F9F-D9BBDF2FA11F</generatorID>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A32EF3BA-6A7E-4A47-A0C5-60823D92CEEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

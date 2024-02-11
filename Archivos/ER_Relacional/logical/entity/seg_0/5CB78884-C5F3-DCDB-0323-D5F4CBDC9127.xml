@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5CB78884-C5F3-DCDB-0323-D5F4CBDC9127" name="Posicion">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:57:32 UTC</createdTime>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Conteo" id="23F23AC7-BE0F-35A3-7CB4-B4F45CFF9051">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:58:04 UTC</createdTime>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Lenguaje" id="01F0EE6A-1CAA-B825-6CD6-4FD2BF887D94">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 21:59:14 UTC</createdTime>
+<generatorID>22DBF488-26B5-70E9-7E29-4B073698EA5E</generatorID>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<referedAttribute>BB297C96-A88E-1637-3A87-CB5A2D30C824</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Anio_Trimestral" id="12378FFB-3F3A-7130-8102-FDEE98D7A596">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:00:31 UTC</createdTime>
+<generatorID>99C85E55-3FC0-54BE-3F9F-D9BBDF2FA11F</generatorID>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<referedAttribute>79A88677-B024-E3B7-0C4C-7A12D47FCEE8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E0B11D76-5063-96EC-3F87-B8E365547437" name="Posicion PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:17 UTC</createdTime>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<engineerTo>
+<item key="09B871B8-E267-EFC6-3CD5-903FF6E58CEF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>01F0EE6A-1CAA-B825-6CD6-4FD2BF887D94</attributeRef>
+<attributeRef>12378FFB-3F3A-7130-8102-FDEE98D7A596</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
