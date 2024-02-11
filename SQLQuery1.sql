@@ -1,5 +1,6 @@
 -- Crear la base de datos Quetzal
-CREATE DATABASE Quetzal;
+CREATE DATABASE Quetzal
+COLLATE Latin1_General_CS_AS;
 GO
 
 -- Usar la base de datos Quetzal
@@ -18,6 +19,7 @@ GO
 -- Mostramos los datos despues de cargar la informacion
 SELECT * FROM CargaDeDatos;
 
+/*
 --CREACION DE ER
 -- Crear la tabla Lenguaje
 CREATE TABLE Lenguaje (
@@ -73,33 +75,63 @@ ON cd.Annio = att.Annio
 AND cd.Trimestre = att.Trimestre;
 GO
 
-
-SELECT * FROM Lenguaje;
-
-SELECT DISTINCT cd.Lenguaje,cd.Annio,cd.Trimestre
-FROM CargaDeDatos cd;
+--Crear la vista top
+CREATE VIEW Top_Major AS
+SELECT TOP 10 l.Nombre, SUM(p.Conteo) AS Total_Conteo
+FROM Posicion p
+INNER JOIN Lenguaje l ON p.Id_Lenguaje = l.Id_Lenguaje
+INNER JOIN AnnioTrimestre att ON p.Id_AnioTrimestre = att.Id_AnioTrimestre
+WHERE att.Annio BETWEEN 2011 AND 2022
+GROUP BY l.Nombre
+ORDER BY Total_Conteo DESC;
 GO
 
-SELECT COUNT(*) FROM CargaDeDatos;
+-- Crear la vista top con los datos por año
+CREATE VIEW Vista_Trimestral AS
+SELECT 
+    l.Nombre AS Lenguaje,
+    att.Annio As 'Año',
+    SUM(p.Conteo) AS 'Total_Conteo_Trimestral'
+FROM 
+    Posicion p
+JOIN 
+    Lenguaje l ON p.Id_Lenguaje = l.Id_Lenguaje
+JOIN 
+    AnnioTrimestre att ON p.Id_AnioTrimestre = att.Id_AnioTrimestre
+WHERE 
+    l.Nombre IN (
+        SELECT TOP 10 l2.Nombre
+        FROM Posicion p2
+        JOIN Lenguaje l2 ON p2.Id_Lenguaje = l2.Id_Lenguaje
+        WHERE att.Annio BETWEEN 2011 AND 2022
+        GROUP BY l2.Nombre
+        ORDER BY SUM(p2.Conteo) DESC
+    )
+GROUP BY 
+    l.Nombre, att.Annio;
 GO
 
-SELECT Lenguaje, Annio, Trimestre, COUNT(*) AS Repeticiones
-FROM CargaDeDatos
-GROUP BY Lenguaje, Annio, Trimestre
-HAVING COUNT(*) > 1;
+SELECT TOP 10 l.Nombre, SUM(p.Conteo) AS TotalConteo
+FROM Posicion p
+INNER JOIN Lenguaje l ON p.Id_Lenguaje = l.Id_Lenguaje
+INNER JOIN AnnioTrimestre att ON p.Id_AnioTrimestre = att.Id_AnioTrimestre
+WHERE att.Annio BETWEEN 2011 AND 2022
+GROUP BY l.Nombre
+ORDER BY TotalConteo ASC;
 
-SELECT *
-FROM CargaDeDatos
-WHERE Lenguaje = 'MATLAB'
-ORDER BY Annio, Trimestre ASC;
-GO
+SELECT TOP 5 l.Nombre AS Lenguaje, p.Conteo as TotalActividades
+FROM Posicion p
+INNER JOIN Lenguaje l ON p.Id_Lenguaje = l.Id_Lenguaje
+INNER JOIN AnnioTrimestre att ON p.Id_AnioTrimestre = att.Id_AnioTrimestre
+WHERE att.Annio = 2021 AND att.Trimestre = 4
+ORDER BY TotalActividades DESC;
 
-SELECT *
-FROM CargaDeDatos
-WHERE Lenguaje = 'matlab';
-GO
+SELECT TOP 5 l.Nombre AS Lenguaje, SUM(p.Conteo) AS TotalActividades
+FROM Posicion p
+INNER JOIN Lenguaje l ON p.Id_Lenguaje = l.Id_Lenguaje
+INNER JOIN AnnioTrimestre att ON p.Id_AnioTrimestre = att.Id_AnioTrimestre
+WHERE att.Annio = 2021 AND att.Trimestre = 4
+GROUP BY l.Nombre
+ORDER BY TotalActividades DESC;
 
---Insercion de datos en Posicion
-
-
-
+*/
