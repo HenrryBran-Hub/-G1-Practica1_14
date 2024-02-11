@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BE5AC75E-66AE-BAB1-747F-FBF17A44185D" containerWithKeyObject="2B65733D-121E-F72F-8525-DC351F222AFD" localFKIndex="8AAF98E7-A4F5-F81D-6FA4-60E05EACF16A" name="Posicion_Año_Trimestral_FK">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 22:01:05 UTC</createdTime>
+<generatorID>99C85E55-3FC0-54BE-3F9F-D9BBDF2FA11F</generatorID>
+<ownerDesignName>ER_Relacional</ownerDesignName>
+<referredTableLongName>Año_Trimestral</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3E019052-7DA7-97C7-4C7B-1EE0C32754A7</referredTableID>
+<keyObject>594E3DC2-9AFB-46A4-4B49-6FC7D9C8C493</keyObject>
+<referredKeyID>594E3DC2-9AFB-46A4-4B49-6FC7D9C8C493</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Anio_Trimestral</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

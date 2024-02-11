@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ER_Logica" id="9281FE99-A01F-4E9B-C790-A92D7E0DE2C6" version="3.5">
+<createdBy>Henrr</createdBy>
+<createdTime>2024-02-08 19:26:41 UTC</createdTime>
+<ownerDesignName>ER_Logica</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9281FE99-A01F-4E9B-C790-A92D7E0DE2C6</designId>
+</OSDM_Design>
